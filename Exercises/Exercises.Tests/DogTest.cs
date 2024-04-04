@@ -53,5 +53,15 @@ namespace Exercises.Tests
             //Assert
             Assert.Equal("As I weigh 15kg, I should eat 750g per day", howMuchShouldIEat);
         }
+
+        [Fact]
+        public void Dog_Set_Get_Name_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetName("Yuri");
+            string name = dog.GetName();
+
+            Assert.Equal("Yuri", name);
+        }
     }
 }
