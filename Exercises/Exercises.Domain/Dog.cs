@@ -9,10 +9,10 @@ namespace Exercises.Domain
             return "woof! woof!";
         }
 
-        public string HowMuchShouldIEat(int weigh)
+        public string HowMuchShouldIEat(int weighKg)
         {
-            var foodQuantity = weigh * 1000 * 0.05;
-            var message = $"As I weigh {weigh}kg, I should eat {foodQuantity}g per day";
+            var foodQuantityGrams = weighKg * 50;
+            var message = $"As I weigh {weighKg}kg, I should eat {foodQuantityGrams}g per day";
 
             return message;
         }
