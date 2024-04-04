@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 namespace Exercises.Domain
 {
     public class Dog
@@ -31,13 +35,55 @@ namespace Exercises.Domain
         }
         private string _sex;
 
+        public void SetBreed(string breed)
+        {
+            _breed = breed;
+        }
+
+        public string GetBreed()
+        {
+            return _breed;
+        }
+
         private string _breed;
+
+        public void SetSize(string size)
+        {
+            _size = size;
+        }
+
+        public string GetSize()
+        {
+            return _size;
+        }
 
         private string _size;
 
-        private string _age;
+        public void SetAge(int age)
+        {
+            _age = age;
+        }
 
-        private string _weightKg;
+        public int GetAge()
+        {
+            return _age;
+        }
+        private int _age;
+
+        public void SetWeightKg(double weightKg)
+        {
+            if (weightKg < 0)
+                _weightKg = 0;
+            else 
+                _weightKg = weightKg;
+        }
+
+        public double GetWeightKg()
+        {
+            return _weightKg;
+        }
+
+        private double _weightKg;
 
         public string Bark()
         {
@@ -54,6 +100,5 @@ namespace Exercises.Domain
         {
             return $"As I weigh {weighKg}kg, I should eat {weighKg * 50}g per day";
         }
-
     }
 }

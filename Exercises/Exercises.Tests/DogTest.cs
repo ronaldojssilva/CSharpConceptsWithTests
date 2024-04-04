@@ -73,5 +73,57 @@ namespace Exercises.Tests
 
             Assert.Equal("Female", sex);
         }
+
+        [Fact]
+        public void Dog_Set_Get_Breed_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetBreed("Labrador");
+            string breed = dog.GetBreed();
+
+            Assert.Equal("Labrador", breed);
+        }
+
+        [Fact]
+        public void Dog_Set_Get_Size_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetSize("Medium");
+            string size = dog.GetSize();
+
+            Assert.Equal("Medium", size);
+        }
+
+        [Fact]
+        public void Dog_Set_Get_Age_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetAge(4);
+            int age = dog.GetAge();
+
+            Assert.Equal(4, age);
+        }
+
+        [Fact]
+        public void Dog_Set_Get_WeightKg_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetWeightKg(1.2);
+            double weightKg = dog.GetWeightKg();
+
+            Assert.Equal(1.2, weightKg);
+        }
+
+
+        [Fact]
+        public void Dog_Weight_Cannot_Be_Negative_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetWeightKg(-1.2);
+            double weightKg = dog.GetWeightKg();
+
+            Assert.Equal(0, weightKg);
+        }
+
     }
 }
