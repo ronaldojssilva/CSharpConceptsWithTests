@@ -63,5 +63,15 @@ namespace Exercises.Tests
 
             Assert.Equal("Yuri", name);
         }
+
+        [Fact]
+        public void Dog_Set_Get_sex_Test()
+        {
+            Dog dog = new Dog();
+            dog.SetSex("Female");
+            string sex = dog.GetSex();
+
+            Assert.Equal("Female", sex);
+        }
     }
 }

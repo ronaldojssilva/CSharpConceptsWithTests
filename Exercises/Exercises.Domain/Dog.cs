@@ -1,15 +1,42 @@
 ﻿
 
 
+
 namespace Exercises.Domain
 {
     public class Dog
     {
+
+        public void SetName(string name)
+        {
+            _name = name;
+        }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
         private string _name;
+
+
+        public void SetSex(string sex)
+        {
+            _sex = sex;
+        }
+
+        public string GetSex()
+        {
+            return _sex;
+        }
         private string _sex;
+
         private string _breed;
+
         private string _size;
+
         private string _age;
+
         private string _weightKg;
 
         public string Bark()
@@ -17,10 +44,6 @@ namespace Exercises.Domain
             return "woof! woof!";
         }
 
-        public string GetName()
-        {
-            return _name;
-        }
 
         /// <summary>
         /// Method to calculate 5% of the dog's weight(Kg) in grams of food
@@ -32,9 +55,5 @@ namespace Exercises.Domain
             return $"As I weigh {weighKg}kg, I should eat {weighKg * 50}g per day";
         }
 
-        public void SetName(string name)
-        {
-            _name = name;   
-        }
     }
 }
