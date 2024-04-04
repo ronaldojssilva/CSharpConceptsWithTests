@@ -31,5 +31,27 @@ namespace Exercises.Tests
             //Assert
             Assert.Equal("As I weigh 1kg, I should eat 50g per day", howMuchShouldIEat);
         }
+
+        [Fact]
+        public void Tequila_HowMuchShouldIEat_Test()
+        {
+            //Arranje
+            Dog dog = new Dog();
+            //Act
+            string howMuchShouldIEat = dog.HowMuchShouldIEat(30);
+            //Assert
+            Assert.Equal("As I weigh 30kg, I should eat 1500g per day", howMuchShouldIEat);
+        }
+
+        [Fact]
+        public void Yuri_HowMuchShouldIEat_Test()
+        {
+            //Arranje
+            Dog dog = new Dog();
+            //Act
+            string howMuchShouldIEat = dog.HowMuchShouldIEat(15);
+            //Assert
+            Assert.Equal("As I weigh 15kg, I should eat 750g per day", howMuchShouldIEat);
+        }
     }
 }

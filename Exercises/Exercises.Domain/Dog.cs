@@ -11,7 +11,10 @@ namespace Exercises.Domain
 
         public string HowMuchShouldIEat(int weigh)
         {
-            throw new NotImplementedException();
+            var foodQuantity = weigh * 1000 * 0.05;
+            var message = $"As I weigh {weigh}kg, I should eat {foodQuantity}g per day";
+
+            return message;
         }
     }
 }
