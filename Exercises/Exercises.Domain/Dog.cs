@@ -9,12 +9,14 @@ namespace Exercises.Domain
             return "woof! woof!";
         }
 
+        /// <summary>
+        /// Method to calculate 5% of the dog's weight(Kg) in grams of food
+        /// </summary>
+        /// <param name="weighKg"></param>
+        /// <returns></returns>
         public string HowMuchShouldIEat(int weighKg)
         {
-            var foodQuantityGrams = weighKg * 50;
-            var message = $"As I weigh {weighKg}kg, I should eat {foodQuantityGrams}g per day";
-
-            return message;
+            return $"As I weigh {weighKg}kg, I should eat {weighKg * 50}g per day";
         }
     }
 }
