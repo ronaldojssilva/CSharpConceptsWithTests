@@ -11,84 +11,24 @@ namespace Exercises.Domain
     public class Dog
     {
 
-        public void SetName(string name)
-        {
-            _name = name;
-        }
+        public string Name { get; set; }
 
-        public string GetName()
-        {
-            return _name;
-        }
+        public string Sex { get; set; }
 
-        private string _name;
+        public string Breed { get; set; }
 
+        public string Size { get; set; }
 
-        public void SetSex(string sex)
-        {
-            _sex = sex;
-        }
-
-        public string GetSex()
-        {
-            return _sex;
-        }
-        private string _sex;
-
-        public void SetBreed(string breed)
-        {
-            _breed = breed;
-        }
-
-        public string GetBreed()
-        {
-            return _breed;
-        }
-
-        private string _breed;
-
-        public void SetSize(string size)
-        {
-            _size = size;
-        }
-
-        public string GetSize()
-        {
-            return _size;
-        }
-
-        private string _size;
-
-        public void SetAge(int age)
-        {
-            _age = age;
-        }
-
-        public int GetAge()
-        {
-            return _age;
-        }
-        private int _age;
-
-        public void SetWeightKg(double weightKg)
-        {
-            if (weightKg < 0)
-                _weightKg = 0;
-            else 
-                _weightKg = weightKg;
-        }
-
-        public double GetWeightKg()
-        {
-            return _weightKg;
-        }
+        public int Age { get; set; }
 
         private double _weightKg;
-
-        public string Bark()
+        public double WeightKg 
         {
-            return "woof! woof!";
+            get {return _weightKg;}
+            set { _weightKg = Math.Max(0, value); }
         }
+
+        public string Bark => "woof! woof!";
 
 
         /// <summary>

@@ -11,7 +11,7 @@ namespace Exercises.Tests
             //Arranje
             Dog dog = new Dog();
             //Act
-            string bark = dog.Bark();
+            string bark = dog.Bark;
             //Assert
             Assert.Equal("woof! woof!", bark);
         }
@@ -58,8 +58,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_Name_Test()
         {
             Dog dog = new Dog();
-            dog.SetName("Yuri");
-            string name = dog.GetName();
+            dog.Name = "Yuri";
+            string name = dog.Name;
 
             Assert.Equal("Yuri", name);
         }
@@ -68,8 +68,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_sex_Test()
         {
             Dog dog = new Dog();
-            dog.SetSex("Female");
-            string sex = dog.GetSex();
+            dog.Sex = "Female";
+            string sex = dog.Sex;
 
             Assert.Equal("Female", sex);
         }
@@ -78,8 +78,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_Breed_Test()
         {
             Dog dog = new Dog();
-            dog.SetBreed("Labrador");
-            string breed = dog.GetBreed();
+            dog.Breed ="Labrador";
+            string breed = dog.Breed;
 
             Assert.Equal("Labrador", breed);
         }
@@ -88,8 +88,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_Size_Test()
         {
             Dog dog = new Dog();
-            dog.SetSize("Medium");
-            string size = dog.GetSize();
+            dog.Size = "Medium";
+            string size = dog.Size;
 
             Assert.Equal("Medium", size);
         }
@@ -98,8 +98,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_Age_Test()
         {
             Dog dog = new Dog();
-            dog.SetAge(4);
-            int age = dog.GetAge();
+            dog.Age = 4;
+            int age = dog.Age;
 
             Assert.Equal(4, age);
         }
@@ -108,8 +108,8 @@ namespace Exercises.Tests
         public void Dog_Set_Get_WeightKg_Test()
         {
             Dog dog = new Dog();
-            dog.SetWeightKg(1.2);
-            double weightKg = dog.GetWeightKg();
+            dog.WeightKg = 1.2;
+            double weightKg = dog.WeightKg;
 
             Assert.Equal(1.2, weightKg);
         }
@@ -119,8 +119,8 @@ namespace Exercises.Tests
         public void Dog_Weight_Cannot_Be_Negative_Test()
         {
             Dog dog = new Dog();
-            dog.SetWeightKg(-1.2);
-            double weightKg = dog.GetWeightKg();
+            dog.WeightKg = -1.2;
+            double weightKg = dog.WeightKg;
 
             Assert.Equal(0, weightKg);
         }
