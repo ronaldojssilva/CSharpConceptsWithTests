@@ -17,8 +17,7 @@ namespace teste_mock.Services.Interfaces
 
         public Produto Add(int id, string nome, string codigo)
         {
-            _repository.Add(id, nome, codigo);
-            return null;
+            return _repository.Add(id, nome, codigo);
         }
     }
 }
