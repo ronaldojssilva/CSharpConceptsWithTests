@@ -1,0 +1,1 @@
+O objetivo é deixar somente as interfaces publicas e mesmo assim poder fazer o teste unnitário e adicionar o map na classe proma da api

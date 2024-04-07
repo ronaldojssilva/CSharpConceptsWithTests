@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises.Domain", "Exercises.Domain\Exercises.Domain.csproj", "{63448935-6CCF-49B2-9C4D-F89FABD6350E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises.Domain", "Exercises.Domain\Exercises.Domain.csproj", "{63448935-6CCF-49B2-9C4D-F89FABD6350E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercises.Tests", "Exercises.Tests\Exercises.Tests.csproj", "{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercises.Tests", "Exercises.Tests\Exercises.Tests.csproj", "{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercicios 01", "Exercicios 01", "{54E1DBD4-19C9-4F1A-98C1-102ED46E3338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Unit e AutoMapper - Teste unitários", "X-Unit e AutoMapper - Teste unitários", "{D03CF098-D35A-41F2-A054-6F66B44033BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-UnitAutoMapper", "X-UnitAutoMapper", "{F545B5BE-96E8-412D-A669-DB777E7E9053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAutoMapper.Api", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Api\TesteAutoMapper.Api.csproj", "{C3205E38-1300-444C-9CA9-92C395651AD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAutoMapper.Test", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Test\TesteAutoMapper.Test.csproj", "{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassesNívelAcessibilidadeInternal", "ClassesNívelAcessibilidadeInternal", "{FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}"
+	ProjectSection(SolutionItems) = preProject
+		ClassesNívelAcessibilidadeInternal\ClassesNívelAcessibilidadeInternal.txt = ClassesNívelAcessibilidadeInternal\ClassesNívelAcessibilidadeInternal.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteApi", "ClassesNívelAcessibilidadeInternal\TesteApi\TesteApi.csproj", "{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Services", "ClassesNívelAcessibilidadeInternal\Teste.Services\Teste.Services.csproj", "{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Test", "ClassesNívelAcessibilidadeInternal\Teste.Test\Teste.Test.csproj", "{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste unitários de exceções", "Teste unitários de exceções", "{9742CB12-57EA-4468-8E1C-CAFBF55B47F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +44,39 @@ Global
 		{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3205E38-1300-444C-9CA9-92C395651AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3205E38-1300-444C-9CA9-92C395651AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3205E38-1300-444C-9CA9-92C395651AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3205E38-1300-444C-9CA9-92C395651AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63448935-6CCF-49B2-9C4D-F89FABD6350E} = {54E1DBD4-19C9-4F1A-98C1-102ED46E3338}
+		{DFD65BF7-AF86-4DE3-B2BA-AE6F2A053A2E} = {54E1DBD4-19C9-4F1A-98C1-102ED46E3338}
+		{F545B5BE-96E8-412D-A669-DB777E7E9053} = {D03CF098-D35A-41F2-A054-6F66B44033BC}
+		{C3205E38-1300-444C-9CA9-92C395651AD9} = {F545B5BE-96E8-412D-A669-DB777E7E9053}
+		{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3} = {F545B5BE-96E8-412D-A669-DB777E7E9053}
+		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
+		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
+		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0D3126F-708E-4525-84BF-9E1C0818166D}
