@@ -13,22 +13,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Unit e AutoMapper - Teste
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-UnitAutoMapper", "X-UnitAutoMapper", "{F545B5BE-96E8-412D-A669-DB777E7E9053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAutoMapper.Api", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Api\TesteAutoMapper.Api.csproj", "{C3205E38-1300-444C-9CA9-92C395651AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteAutoMapper.Api", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Api\TesteAutoMapper.Api.csproj", "{C3205E38-1300-444C-9CA9-92C395651AD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAutoMapper.Test", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Test\TesteAutoMapper.Test.csproj", "{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteAutoMapper.Test", "X-Unit e AutoMapper - Teste unitários\X-UnitAutoMapper\TesteAutoMapper.Test\TesteAutoMapper.Test.csproj", "{DEA209F9-9FD1-4EF8-997D-FE891DB72BB3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClassesNívelAcessibilidadeInternal", "ClassesNívelAcessibilidadeInternal", "{FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}"
 	ProjectSection(SolutionItems) = preProject
 		ClassesNívelAcessibilidadeInternal\ClassesNívelAcessibilidadeInternal.txt = ClassesNívelAcessibilidadeInternal\ClassesNívelAcessibilidadeInternal.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteApi", "ClassesNívelAcessibilidadeInternal\TesteApi\TesteApi.csproj", "{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteApi", "ClassesNívelAcessibilidadeInternal\TesteApi\TesteApi.csproj", "{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Services", "ClassesNívelAcessibilidadeInternal\Teste.Services\Teste.Services.csproj", "{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste.Test", "ClassesNívelAcessibilidadeInternal\Teste.Test\Teste.Test.csproj", "{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste.Test", "ClassesNívelAcessibilidadeInternal\Teste.Test\Teste.Test.csproj", "{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste unitários de exceções", "Teste unitários de exceções", "{9742CB12-57EA-4468-8E1C-CAFBF55B47F5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teste unitários de Moq", "Teste unitários de Moq", "{9742CB12-57EA-4468-8E1C-CAFBF55B47F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-mock.api", "Teste unitários de Moq\teste-mock.api\teste-mock.api.csproj", "{4A3B27BE-EE24-4804-B258-E0F539EBDE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-mock.Models", "Teste unitários de Moq\teste-mock.Models\teste-mock.Models.csproj", "{0F0C6E8C-BF90-4D90-844F-32C49E827CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-mock.Repository", "teste-mock.Repository\teste-mock.Repository.csproj", "{65EBFD5C-5ED2-42E9-B03A-94451B1FB076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-mock.Services", "Teste unitários de Moq\teste-mock.Services\teste-mock.Services.csproj", "{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste-mock.Tests", "Teste unitários de Moq\teste-mock.Tests\teste-mock.Tests.csproj", "{05B98806-C0E1-4E32-BE41-331446D20F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +74,26 @@ Global
 		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3B27BE-EE24-4804-B258-E0F539EBDE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3B27BE-EE24-4804-B258-E0F539EBDE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3B27BE-EE24-4804-B258-E0F539EBDE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3B27BE-EE24-4804-B258-E0F539EBDE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0C6E8C-BF90-4D90-844F-32C49E827CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0C6E8C-BF90-4D90-844F-32C49E827CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0C6E8C-BF90-4D90-844F-32C49E827CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0C6E8C-BF90-4D90-844F-32C49E827CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EBFD5C-5ED2-42E9-B03A-94451B1FB076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EBFD5C-5ED2-42E9-B03A-94451B1FB076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EBFD5C-5ED2-42E9-B03A-94451B1FB076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EBFD5C-5ED2-42E9-B03A-94451B1FB076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B98806-C0E1-4E32-BE41-331446D20F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B98806-C0E1-4E32-BE41-331446D20F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B98806-C0E1-4E32-BE41-331446D20F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B98806-C0E1-4E32-BE41-331446D20F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +107,11 @@ Global
 		{9CEA67FA-2DBF-435F-BE2A-CA12B2F0DA66} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
 		{C5D3FAA9-D9B4-4B2F-BC4F-35E2D56B0033} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
 		{075E392D-D74D-4FCF-B3E6-4196D82CF7C2} = {FCBC4EED-F1C2-48EB-AEE7-82F7D9A4085F}
+		{4A3B27BE-EE24-4804-B258-E0F539EBDE59} = {9742CB12-57EA-4468-8E1C-CAFBF55B47F5}
+		{0F0C6E8C-BF90-4D90-844F-32C49E827CE8} = {9742CB12-57EA-4468-8E1C-CAFBF55B47F5}
+		{65EBFD5C-5ED2-42E9-B03A-94451B1FB076} = {9742CB12-57EA-4468-8E1C-CAFBF55B47F5}
+		{F5DBA393-CB93-4CC3-A1E0-25E1B7349F9F} = {9742CB12-57EA-4468-8E1C-CAFBF55B47F5}
+		{05B98806-C0E1-4E32-BE41-331446D20F61} = {9742CB12-57EA-4468-8E1C-CAFBF55B47F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0D3126F-708E-4525-84BF-9E1C0818166D}
